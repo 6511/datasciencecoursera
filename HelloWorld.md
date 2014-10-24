@@ -3,11 +3,36 @@
 It's in a text file called HelloWorld.md
 in 2014-10-DataSciToolbox/gitRepos/datasciencecoursera/HelloWorld.md
 
-git init
-git push --dry-run --repo=datasciencecoursera  HelloWorld.md
+git help init
 
-git remote add [-t <branch>] [-m <master>] [-f] [--[no-]tags] [--mirror=<fetch|push>] <name> <url>
-git remote add HelloWorld.md https://github.com/6511/datasciencecoursera.git
+git init
+#x git push --dry-run --repo=datasciencecoursera  
+#x git remote add [-t <branch>] [-m <master>] [-f] [--[no-]tags] [--mirror=<fetch|push>] <name> <url>
+#x git remote add HelloWorld.md https://github.com/6511/datasciencecoursera.git
+
+#******************************************************************************
+#The general idea is to add, commit and push your files to the GitHub repo.
+#******************************************************************************
+git add HelloWorld.md
+git status
+# On branch master
+#
+# Initial commit
+#
+# Changes to be committed:
+#   (use "git rm --cached <file>..." to unstage)
+#
+#	new file:   HelloWorld.md
+#
+git commit  -m 'HelloWorld.md'
+#Finally, to push files.
+git push --set-upstream https://github.com/6511/datasciencecoursera master
+git push --dry-run  -u  --repo=https://github.com/6511/datasciencecoursera
+
+# Made further edits
+git commit  -m 'Made further edits to HelloWorld.md'
+
+
 
 GIT-PUSH(1)                                                 Git Manual                                                GIT-PUSH(1)
 
