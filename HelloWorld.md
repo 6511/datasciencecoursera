@@ -28,9 +28,23 @@ git commit  -m 'HelloWorld.md'
 #Finally, to push files.
 git push --set-upstream https://github.com/6511/datasciencecoursera master
 git push --dry-run  -u  --repo=https://github.com/6511/datasciencecoursera
+git push --set-upstream https://github.com/6511/datasciencecoursera master
 
 # Made further edits
 git commit  -m 'Made further edits to HelloWorld.md'
+# ********* Error # Changes not staged for commit:
+
+git add HelloWorld.md
+git status
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	modified:   HelloWorld.md
+#
+git commit  -m 'Made further edits to HelloWorld.md'
+# [master b63804c] Made further edits to HelloWorld.md
+# 1 file changed, 28 insertions(+), 3 deletions(-)
 
 
 
